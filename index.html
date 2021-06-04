@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 270px;
+        height: 350px;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjvKJ37mRRsI2NQbMx9bIkygf-v9mh9SH0Q&usqp=CAU)
+          center/cover;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      .text-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        transform: translate(-300px);
+        transition: 0.3s ease;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .text-content .text {
+        transform: translateX(-300px);
+        transition: 0.4s cubic-bezier(0.45, 1.48, 0.18, 0.81), 0.3s;
+      }
+      .text-content a {
+        display: block;
+        text-decoration: none;
+        width: 110px;
+        height: 40px;
+        background: #fff;
+        text-align: center;
+        line-height: 40px;
+        color: #000;
+        transform: translateY(200px);
+        transition: 0.4s cubic-bezier(0.46, 1.48, 0.18, 0.81), 0.6s;
+      }
+      .container:hover .text-content {
+        transform: translateX(0);
+      }
+      .container:hover .text-content .text {
+        transform: translateX(0);
+      }
+      .container:hover .text-content a {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-content">
+        <h3 class="twxt">Colosseum</h3>
+        <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+          necessitatibus cupiditate alias adipisci totam incidunt molestiae
+          nostrum quam a excepturi?
+        </p>
+        <a href="#">read more</a>
+      </div>
+    </div>
+  </body>
+</html>
